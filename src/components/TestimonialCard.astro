@@ -16,7 +16,7 @@ if (!images[avatar])
   throw new Error(`"${avatar}" does not exist in glob: "@/assets/*.jpg}"`);
 ---
 
-<section class:list={[classes, "rounded-lg px-[36px] py-7 text-primaryWhite"]}>
+<section class:list={[classes, "rounded-lg px-[36px] py-7"]}>
   <div class="mb-4 flex items-center">
     <Image
       src={images[avatar]()}
