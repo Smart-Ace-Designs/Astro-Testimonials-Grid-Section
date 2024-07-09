@@ -1,0 +1,35 @@
+---
+import Image from "astro/components/Image.astro";
+
+interface Props {
+  classes: string;
+  avatar: string;
+  author: string;
+  status: string;
+  synopsis: string;
+  review: string;
+}
+const { classes, avatar, author, status, synopsis, review } = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>("@/assets/*.jpg");
+if (!images[avatar])
+  throw new Error(`"${avatar}" does not exist in glob: "@/assets/*.jpg}"`);
+---
+
+<section class:list={[classes, "rounded-lg p-4 text-primaryWhite"]}>
+  <div class="mb-4 flex items-center">
+    <Image
+      src={images[avatar]()}
+      alt={author}
+      width="50"
+      class="mr-4 rounded-full"
+    />
+    <div>
+      <p>{author}</p>
+      <p class="text-xs text-secondaryLightGray">{status}</p>
+    </div>
+  </div>
+
+  <p class="mb-4">{synopsis}</p>
+  <p>{review}</p>
+</section>
