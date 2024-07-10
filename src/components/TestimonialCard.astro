@@ -16,7 +16,7 @@ if (!images[avatar])
   throw new Error(`"${avatar}" does not exist in glob: "@/assets/*.jpg}"`);
 ---
 
-<section class:list={[classes, "rounded-lg px-[36px] py-7"]}>
+<article class:list={[classes, "rounded-lg px-[36px] py-7"]}>
   <div class="mb-4 flex items-center">
     <Image
       src={images[avatar]()}
@@ -25,11 +25,11 @@ if (!images[avatar])
       class="mr-4 rounded-full shadow-inner"
     />
     <div>
-      <p>{author}</p>
+      <h2>{author}</h2>
       <p class="text-[11px] text-secondaryLightGray">{status}</p>
     </div>
   </div>
 
   <p class="mb-4 text-xl leading-tight">{synopsis}</p>
   <p class="text-xs leading-normal text-secondaryLightGray">{review}</p>
-</section>
+</article>
