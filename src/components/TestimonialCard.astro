@@ -16,15 +16,12 @@ if (!images[avatar])
   throw new Error(`"${avatar}" does not exist in glob: "@/assets/*.jpg}"`);
 ---
 
-<!-- Account for Tailwind CSS issue where color classes are not compiled when dynamically appended from JSON file-->
-<div class="hidden bg-primaryModerateViolet text-primaryWhite"></div>
+<!-- Account for Tailwind CSS issue where color classes are not compiled when dynamically appended from JSON file--><!-- <div class="hidden bg-primaryModerateViolet text-primaryWhite"></div>
 <div class="hidden bg-primaryVeryDarkGrayishBlue text-secondaryLightGray"></div>
 <div class="hidden bg-primaryVeryDarkBlackishBlue text-secondaryGrayishBlue">
 </div>
 <div class="hidden bg-primaryWhite text-secondaryLightGray"></div>
-<div class="hidden bg-primaryWhite text-secondaryGrayishBlue"></div>
-<!-- -->
-
+<div class="hidden bg-primaryWhite text-secondaryGrayishBlue"></div> --><!-- -->
 <article class:list={[classes, "rounded-lg px-[36px] py-7"]}>
   <div class="mb-4 flex items-center">
     <Image
