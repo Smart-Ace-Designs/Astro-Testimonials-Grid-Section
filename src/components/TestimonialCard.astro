@@ -22,14 +22,14 @@ if (!images[avatar])
       src={images[avatar]()}
       alt={author}
       width="30"
-      class="mr-4 rounded-full shadow-inner"
+      class="mr-4 rounded-full outline outline-1"
     />
     <div>
       <h2>{author}</h2>
-      <p class="text-[11px] text-secondaryLightGray">{status}</p>
+      <p class="text-[11px] opacity-50">{status}</p>
     </div>
   </div>
 
   <p class="mb-4 text-xl leading-tight">{synopsis}</p>
-  <p class="text-xs leading-normal text-secondaryLightGray">{review}</p>
+  <p class="text-xs leading-normal opacity-70">{review}</p>
 </article>
