@@ -10,7 +10,6 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -22,6 +21,7 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 
 ### Screenshot
+
 ![testimonials-grid-section](https://github.com/user-attachments/assets/56baee26-40da-4552-93fe-43deca7eff9f)
 
 ### Links
@@ -41,13 +41,7 @@ Users should be able to:
 - Bun
 - Mobile-first workflow
 
-### Useful resources
-
-- [Tailwind Grid Generator](https://www.tailwindgen.com/)
-- [Tailwind CSS Cheat Sheet](https://tailwindcomponents.com/cheatsheet/)
-
 ## Author
 
 - Website - [Smart Ace Designs (GitHub)](https://github.com/Smart-Ace-Designs)
 - Frontend Mentor - [@smart-ace-designs](https://www.frontendmentor.io/profile/Smart-Ace-Designs)
-
