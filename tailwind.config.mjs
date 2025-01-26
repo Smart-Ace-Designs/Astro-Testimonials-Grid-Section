@@ -4,12 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primaryModerateViolet: "hsl(263, 55%, 52%)",
-        primaryVeryDarkGrayishBlue: "hsl(217, 19%, 35%)",
-        primaryVeryDarkBlackishBlue: "hsl(219, 29%, 14%)",
-        primaryWhite: "hsl(0, 0%, 100%)",
-        secondaryLightGray: "hsl(0, 0%, 81%)",
-        secondaryGrayishBlue: "hsl(210, 46%, 95%)",
+        "theme-moderate-violet": "hsl(263, 55%, 52%)",
+        "theme-very-dark-grayish-blue": "hsl(217, 19%, 35%)",
+        "theme-very-dark-blackish-blue": "hsl(219, 29%, 14%)",
+        "theme-white": "hsl(0, 0%, 100%)",
+        "theme-grayish-blue": "hsl(210, 46%, 95%)",
       },
       fontFamily: {
         barlow: ["Barlow Semi Condensed", "sans-serif"],
