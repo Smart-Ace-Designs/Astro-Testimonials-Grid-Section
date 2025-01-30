@@ -1,17 +1,35 @@
-@font-face {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 500;
-  src: url("/fonts/BarlowSemiCondensed-Medium.ttf") format("truetype");
+@import "tailwindcss";
+
+@theme {
+  --color-theme-moderate-violet: hsl(263, 55%, 52%);
+  --color-theme-very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --color-theme-very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --color-theme-white: hsl(0, 0%, 100%);
+  --color-theme-grayish-blue: hsl(210, 46%, 95%);
+
+  --font-barlow: "Barlow Semi Condensed", sans-serif;
 }
 
-@font-face {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 600;
-  src: url("/fonts/SemiCondensed-SemiBold.ttf") format("truetype");
-}
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @font-face {
+    font-family: "Barlow Semi Condensed";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/fonts/BarlowSemiCondensed-Medium.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Barlow Semi Condensed";
+    font-style: normal;
+    font-weight: 600;
+    src: url("/fonts/SemiCondensed-SemiBold.ttf") format("truetype");
+  }
+}
