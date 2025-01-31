@@ -24,6 +24,7 @@
     font-style: normal;
     font-weight: 500;
     src: url("/fonts/BarlowSemiCondensed-Medium.ttf") format("truetype");
+    font-display: swap;
   }
 
   @font-face {
@@ -31,5 +32,6 @@
     font-style: normal;
     font-weight: 600;
     src: url("/fonts/SemiCondensed-SemiBold.ttf") format("truetype");
+    font-display: swap;
   }
 }
