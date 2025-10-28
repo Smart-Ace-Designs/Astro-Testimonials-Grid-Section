@@ -9,29 +9,3 @@
 
   --font-barlow: "Barlow Semi Condensed", sans-serif;
 }
-
-@layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
-}
-
-@font-face {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 500;
-  src: url("/fonts/BarlowSemiCondensed-Medium.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 600;
-  src: url("/fonts/SemiCondensed-SemiBold.ttf") format("truetype");
-  font-display: swap;
-}
