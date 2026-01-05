@@ -17,7 +17,6 @@ export default defineConfig({
         cssVariable: "--font-barlow",
         weights: [400],
         styles: ["normal"],
-        subsets: ["latin"],
       },
     ],
   },
