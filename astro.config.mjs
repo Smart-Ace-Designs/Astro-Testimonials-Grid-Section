@@ -8,15 +8,13 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  experimental: {
-    fonts: [
-      {
-        provider: fontProviders.google(),
-        name: "Barlow Semi Condensed",
-        cssVariable: "--font-barlow",
-        weights: [400],
-        styles: ["normal"],
-      },
-    ],
-  },
+  fonts: [
+    {
+      provider: fontProviders.google(),
+      name: "Barlow Semi Condensed",
+      cssVariable: "--font-barlow",
+      weights: [400],
+      styles: ["normal"],
+    },
+  ],
 });
